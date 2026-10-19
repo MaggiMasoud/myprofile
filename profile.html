@@ -7,74 +7,117 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        :root {
+            /* Page */
+            --page-bg: #F3F4F6;
+            --text: #374151;
+            --white: #FFFFFF;
+            --blue: #1E3A5F ; 
+
+            /* Navy (header, footer, h2 text) */
+            --navy: #1E3A5F;
+            --navy-dark: #16304F;
+            --header-subtext: #DBEAFE;
+
+            /* Main content */
+            --main-border: #D1D5DB;
+            --heading-bg: #E8EEF5;
+            --heading-border: #CBD5E1;
+            --paragraph-text: #4B5563;
+            --paragraph-border: #E5E7EB;
+
+            /* Skills */
+            --skills-text: #166534;
+            --skills-bg: #DCFCE7;
+            --skills-border: #BBF7D0;
+
+            /* Goals */
+            --goals-text: #7C2D12;
+            --goals-bg: #FFF7ED;
+            --goals-border: #FED7AA;
+
+            /* Font sizes */
+            --font-small: 14px;
+            --font-base: 16px;
+            --font-h2: 22px;
+            --font-h1: 32px;
+
+            /* Spacing */
+            --space-xs: 8px;
+            --space-sm: 10px;
+            --space-md: 12px;
+            --space-lg: 16px;
+            --space-xl: 20px;
+            --space-2xl: 24px;
+        }
    body {
-    background-color:#F3F4F6;
-    color:#374151 ;
-    font-size: 16px;
+    background-color:var( --page-bg);
+    color:var(--text) ;
+    font-size: var(--font-base);
     margin: 0px;
    }
    header {
-    background-color: #1E3A5F;
-    color:#FFFFFF ;
-    font-size: 16px;
-    padding: 24px;
-    border:2px solid #16304F ;
+    background-color: var(--navy);
+    color:var(--white) ;
+    font-size: var(--font-base);
+    padding: var(--space-2xl);
+    border:2px solid var( --navy-dark) ;
    }
 
 header h1 {
-    color:#FFFFFF ;
-    font-size:32px ;
+    color:var(--white);
+    font-size:var(--font-h1) ;
     margin: 0px ;
 }
 header p {
-    color: #DBEAFE;
-    font-size: 16px;
-    margin: 12px;
+    color: var( --header-subtext);
+    font-size: var(--font-base);
+    margin: var(--space-md);
 }
 main {
-    background-color: #FFFFFF;
-    color:#374151;
-    padding:20px ;
-    border:1px solid #D1D5DB ;
-    margin:16px ;
+    background-color: var(--white);
+    color:var(--text);
+    padding:var(--space-xl) ;
+    border:1px solid var(--main-borde) ;
+    margin:var(--space-lg) ;
 }
 main h2 {
-    color:#1E3A5F ;
-    background-color:#E8EEF5 ;
-    font-size: 22px;
-    padding: 12px;
-    border:1px solid #CBD5E1 ;
-    margin: 20px;
+    color:var(--blue) ;
+    background-color:var(--heading-bg) ;
+    font-size: var(--font-h2);
+    padding: var(--space-md);
+    border:1px solid var(--heading-border) ;
+    margin: var(--space-xl);
 }
 main p {
-    color: #4B5563;
-    font-size: 16px;
-    margin: 10px;
-    padding: 8px;
-    border: 1px solid #E5E7EB;
+    color: var(--paragraph-text);
+    font-size: var(--font-base);
+    margin: var(--space-sm);
+    padding: var(--space-xs);
+    border: 1px solid var(--paragraph-border);
 }
 main section:nth-of-type(2) p {
-    color:#166534 ;
-background-color:#DCFCE7 ;
-font-size: 16px;
-padding: 12px;
-border:1px solid #BBF7D0 ;
-margin: 10px;
+    color:var(--skills-text) ;
+background-color:var(--skills-bg);
+font-size: var(--font-base);
+padding: var(--space-md);
+border:1px solid var(--skills-border) ;
+margin: var(--space-sm);
 }
 main section :nth-of-type(3) {
-    background-color: #FFF7ED;
-    color: #7C2D12;
-    padding: 12px;
-    border:1px solid #FED7AA ;
-    margin: 20px;
+    background-color: var(--goals-bg);
+    color: var(--goals-text);
+    padding: var(--space-md);
+    border:1px solid var(--goals-border) ;
+    margin: var(--space-xl);
 }
 footer {
-    background-color:#1E3A5F ;
-    color:#FFFFFF ;
-    font-size:14px ;
-    padding: 16px;
-    border: 1px solid #16304F;
-    margin: 20px;
+    background-color:var(--blue);
+    color:var(--white) ;
+    font-size:var(--font-small) ;
+    padding: var(--space-lg);
+    border: 1px solid var( --navy-dark);
+    margin: var(--space-xl);
 }
 
     </style>
